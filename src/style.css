@@ -1,0 +1,129 @@
+body {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+.container {
+  background-color: cornflowerblue;
+  border: 4px solid;
+  border-color: lightblue;
+  border-radius: 10px;
+  background: linear-gradient(lightblue, cornflowerblue);
+}
+p {
+  font-size: 30px;
+  padding: 5px;
+  font-size: 40px;
+  color: brown;
+}
+.searchbox {
+  padding: 25px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: monospace;
+  text-align: center;
+}
+#currentLocation {
+  font-family: monospace;
+  font-weight: lighter;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: white;
+  background-color: cornflowerblue;
+  box-shadow: 3px 3px 3px rgb(173, 216, 230, 1);
+  color: white;
+}
+#submitButton {
+  font-family: monospace;
+  font-weight: lighter;
+  border-radius: 2px;
+  background-color: cornflowerblue;
+  box-shadow: 3px 3px 3px rgb(173, 216, 230, 1);
+  color: white;
+  border: 1px solid;
+  border-color: white;
+}
+.todaytemp {
+  font-size: 50px;
+  position: relative;
+  right: -60px;
+  top: -35px;
+}
+#celTemp {
+  text-decoration-color: black;
+  font-size: 20px;
+  position: relative;
+  right: -60px;
+  top: -50px;
+  color: black;
+}
+#farTemp {
+  text-decoration-color: black;
+  font-size: 20px;
+  position: relative;
+  right: -60px;
+  top: -50px;
+  color: black;
+}
+
+.bigemoji {
+  font-size: 100px;
+  position: relative;
+  right: -60px;
+  top: -20px;
+}
+
+.humidity {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+  right: -120px;
+  top: -5px;
+}
+.windy {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+  right: -120px;
+  top: -20px;
+}
+
+.today {
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  right: -170px;
+  top: -30px;
+}
+ul {
+  list-style-type: none;
+  font-size: 20px;
+  text-align: left;
+}
+
+.weekday {
+  position: relative;
+  right: -10px;
+  text-align: right;
+  font-weight: bolder;
+  font-family: monospace;
+}
+
+.temp {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+.emoji {
+  position: relative;
+  left: -20px;
+  text-align: left;
+}

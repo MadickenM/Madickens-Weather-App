@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="searchbox">
+          <input type="submit" id="currentLocation" value="Your location"/>
+        <input type="text"  id="search-box" placeholder="Search City" />
+        <input type="submit" id= "submitButton" value="Search" />
+      </form>
+      <p></p>
+  <div class="row">
+    <div class="col-6">
+      <span class= bigemoji>&#x2600</span>
+        <span class="todaytemp" id="temperature">0</span> 
+        <span class=celcius><a href ="#" id="celTemp"> °C/</a>
+        </span>   
+        <span class="farenheit"> <a href="#" id="farTemp">F</a></span>
+        <div class="humidity"> Humidity: <span class="humid"> 0</span> <span class="humidityPercentage">%</span></div>
+    <div class="windy"> Wind: <span class="wind"> 0</span><span class="windSpeed"> km/h</span></div>
+      <div class="today" id="date">#</div>
+    </div>
+    <div class="col-2">
+      <ul class="weekday">
+<li>
+    Mon
+</li>
+<li>Tue</li>
+<li>Wed</li>
+<li>Thu</li>
+<li>Fri</li>
+      </ul>
+    </div>
+    <div class="col-2">
+     <ul class="temp"> 
+<li>26°C</li>
+<li>26°C</li>
+<li>26°C</li>
+<li>26°C</li>
+<li>26°C</li>
+      </ul>
+    </div>
+    <div class="col-2">
+      <ul class=emoji>
+</li>&#x2600</li>
+<li>&#x26c5</li>
+<li>&#x1F327</li>
+<li>&#x1F327</li>
+<li>&#x1F327</li>
+</ul>
+</div>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>
