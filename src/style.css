@@ -127,7 +127,7 @@ ul {
   left: -20px;
   text-align: left;
 }
-#sourceLink {
+.sourceLink {
   font-family: monospace;
   font-size: small;
   color: black;
