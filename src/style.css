@@ -68,7 +68,7 @@ p {
   color: black;
 }
 
-.bigemoji {
+#icon {
   font-size: 100px;
   position: relative;
   right: -60px;
