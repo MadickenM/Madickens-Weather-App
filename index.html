@@ -25,14 +25,16 @@
       <p></p>
   <div class="row">
     <div class="col-6">
-      <img src="" alt="Clear" id="weatherIcon" class="float-left" />
+      <img src=""alt="Clear" id="weatherIcon"/>
         <span class="todaytemp" id="temperature">0</span> 
         <span class=celcius><a href ="#" id="celTemp"> °C/</a>
         </span>   
         <span class="farenheit"> <a href="#" id="farTemp">F</a></span>
-        <div class="humidity"> Humidity: <span class="humid"> 0</span> <span class="humidityPercentage">%</span></div>
-    <div class="windy"> Wind: <span class="wind"> 0</span><span class="windSpeed"> km/h</span></div>
-      <div class="today" id="date">#</div>
+        <ul id="currentWeather"><li class="description" id="despcription">Clear</li>
+          <li class="today" id="date">#</li>
+          <li class="humidity"> Humidity: <span class="humid"> 0</span> <span class="humidityPercentage">%</span></li>
+    <li class="windy"> Wind: <span class="wind"> 0</span><span class="windSpeed"> km/h</span></li>
+      </ul>
     </div>
     <div class="col-2">
       <ul class="weekday">
@@ -64,6 +66,7 @@
 </ul>
 </div>
 <p class= "sourceLink"> <a href="https://github.com/MadickenM/Madickens-Weather-App.git">Open source code</a> by Madicken Malm</p>
+    </div>
     </div>
   <script src="app.js"></script>
   </body>

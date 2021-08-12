@@ -1,11 +1,12 @@
 body {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
-  text-align: center;
   position: relative;
   top: 40px;
+  left: 300px;
 }
 .container {
+  text-align: center;
   background-color: cornflowerblue;
   border: 4px solid;
   border-color: lightblue;
@@ -13,9 +14,8 @@ body {
   background: linear-gradient(lightblue, cornflowerblue);
 }
 p {
-  font-size: 30px;
   padding: 5px;
-  font-size: 40px;
+  font-size: 35px;
   color: brown;
 }
 .searchbox {
@@ -45,65 +45,45 @@ p {
   border: 1px solid;
   border-color: white;
 }
+#weatherIcon {
+  margin-left: 20px;
+}
+
 .todaytemp {
   font-size: 50px;
+  text-align: right;
   position: relative;
-  right: -60px;
-  top: -35px;
+  right: -40px;
+  top: 15px;
 }
 #celTemp {
   text-decoration-color: black;
-  font-size: 20px;
+  font-size: 15px;
   position: relative;
-  right: -60px;
-  top: -50px;
+  right: -40px;
+  top: -10px;
   color: black;
 }
 #farTemp {
   text-decoration-color: black;
-  font-size: 20px;
+  font-size: 15px;
+  text-align: right;
   position: relative;
-  right: -60px;
-  top: -50px;
+  right: -40px;
+  top: -10px;
   color: black;
 }
 
-#icon {
-  font-size: 100px;
-  position: relative;
-  right: -60px;
-  top: -20px;
-}
-
-.humidity {
-  font-size: 15px;
+#currentWeather {
+  font-size: 12px;
   color: white;
   text-align: left;
   margin-bottom: 30px;
   position: relative;
-  right: -120px;
-  top: -5px;
-}
-.windy {
-  font-size: 15px;
-  color: white;
-  text-align: left;
-  margin-bottom: 30px;
-  position: relative;
-  right: -120px;
-  top: -20px;
+  right: -45px;
+  top: 10px;
 }
 
-.today {
-  font-size: 25px;
-  font-weight: normal;
-  color: white;
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  right: -170px;
-  top: -30px;
-}
 ul {
   list-style-type: none;
   font-size: 20px;
@@ -131,5 +111,6 @@ ul {
   font-family: monospace;
   font-size: small;
   color: black;
-  text-align: left;
+  text-align: right;
+  margin-bottom: 0px;
 }
