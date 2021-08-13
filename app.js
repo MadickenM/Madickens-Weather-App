@@ -41,6 +41,8 @@ function searchLocation(position) {
   axios.get(apiUrl).then(changeTemperature);
 }
 
+searchCity("London");
+
 function showCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
@@ -83,5 +85,3 @@ changedValue.addEventListener("click", farenheit);
 
 let regularValue = document.querySelector("#celTemp");
 regularValue.addEventListener("click", celcius);
-
-searchCity("London");
