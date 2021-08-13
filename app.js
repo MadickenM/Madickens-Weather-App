@@ -43,14 +43,6 @@ function searchLocation(position) {
 
 searchCity("London");
 
-function showCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
-let currentLocation = document.querySelector("#currentLocation");
-currentLocation.addEventListener("click", showCurrentLocation);
-
 let now = new Date();
 let day = now.getDay();
 let hour = now.getHours();
