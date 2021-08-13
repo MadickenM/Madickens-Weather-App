@@ -24,6 +24,16 @@ p {
   font-family: monospace;
   text-align: center;
 }
+#currentLocation {
+  font-family: monospace;
+  font-weight: lighter;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: white;
+  background-color: cornflowerblue;
+  box-shadow: 3px 3px 3px rgb(173, 216, 230, 1);
+  color: white;
+}
 #submitButton {
   font-family: monospace;
   font-weight: lighter;

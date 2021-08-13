@@ -66,14 +66,3 @@ function celcius(event) {
   let todayTemp = document.querySelector("#temperature");
   todayTemp.innerHTML = "25°";
 }
-
-function farenheit(event) {
-  event.preventDefault();
-  let todayTemp = document.querySelector("#temperature");
-  todayTemp.innerHTML = "77°";
-}
-let changedValue = document.querySelector("#farTemp");
-changedValue.addEventListener("click", farenheit);
-
-let regularValue = document.querySelector("#celTemp");
-regularValue.addEventListener("click", celcius);
