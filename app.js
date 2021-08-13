@@ -3,6 +3,7 @@ function changeTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+  celsiusTemperature = Math.round(response.data.main.temp);
   document.querySelector(".description").innerHTML =
     response.data.weather[0].description;
   document.querySelector(".humid").innerHTML = Math.round(
@@ -35,12 +36,26 @@ function handleSubmit(event) {
 let form = document.querySelector(".searchbox");
 form.addEventListener("submit", handleSubmit);
 
-function searchLocation(position) {
-  let apiKey = "d234e1fbf5eb366ef1a99fa2c652b5ee";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(changeTemperature);
+function displayFarenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrTemp");
+fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
+
+let celsiusLink = document.querySelector("#celTemp");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("London");
 
 let now = new Date();
@@ -60,9 +75,3 @@ day = days[now.getDay()];
 minutes = ("0" + now.getMinutes()).slice(-2);
 let currentTime = document.querySelector("#date");
 currentTime.innerHTML = `${day} ${hour}:${minutes}`;
-
-function celcius(event) {
-  event.preventDefault();
-  let todayTemp = document.querySelector("#temperature");
-  todayTemp.innerHTML = "25°";
-}
