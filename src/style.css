@@ -48,6 +48,8 @@ p {
 }
 #weatherIcon {
   margin-left: 40px;
+  position: relative;
+  right: -20px;
 }
 
 .todaytemp {
