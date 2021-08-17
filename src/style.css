@@ -1,5 +1,5 @@
 body {
-  max-width: 605px;
+  max-width: 604px;
   margin: 0 auto;
   position: relative;
   top: 40px;
@@ -92,6 +92,9 @@ li:first-letter {
 
 #forecast {
   text-align: left;
+  position: relative;
+  right: -30px;
+  top: 0px;
 }
 .forecastDate {
   font-size: 15px;
@@ -99,6 +102,7 @@ li:first-letter {
 }
 .forecastIcon {
   padding: 5px;
+  position: relative;
   font-size: 15px;
 }
 
