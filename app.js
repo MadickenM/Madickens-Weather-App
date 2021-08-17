@@ -1,3 +1,39 @@
+let now = new Date();
+let day = now.getDay();
+let hour = now.getHours();
+let minutes = now.getMinutes();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+day = days[now.getDay()];
+minutes = ("0" + now.getMinutes()).slice(-2);
+let currentTime = document.querySelector("#date");
+currentTime.innerHTML = `${day} ${hour}:${minutes}`;
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+  let forecastHTML = `<div class="col-6" id="forecast">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div><span class="forecastDate" id="forecast-date">${day}</span><span class="forecastIcon" id="forecast-icon"> &#x2600</span>
+    <span class="forecastMax" id="forecastMax">26°</span><span class="forecastMin" id="forecast-Min">14°</span>
+   </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function changeTemperature(response) {
   document.querySelector("p").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -57,21 +93,4 @@ fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
 let celsiusLink = document.querySelector("#celTemp");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("London");
-
-let now = new Date();
-let day = now.getDay();
-let hour = now.getHours();
-let minutes = now.getMinutes();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-day = days[now.getDay()];
-minutes = ("0" + now.getMinutes()).slice(-2);
-let currentTime = document.querySelector("#date");
-currentTime.innerHTML = `${day} ${hour}:${minutes}`;
+displayForecast();

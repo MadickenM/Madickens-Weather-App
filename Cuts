@@ -1,0 +1,20 @@
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-6" id="weekday-forecast">
+    <span class="forecastDate" id="forecast-date">Mon</span><span class="forecastIcon" id="forecast-icon"> &#x2600</span>
+    <span class="forecastMax" id="forecastMax">26°</span><span class="forecastMin" id="forecast-Min">14°</span>
+    </div>
+  `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();
