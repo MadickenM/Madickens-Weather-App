@@ -1,8 +1,9 @@
 body {
-  max-width: 600px;
+  max-width: 605px;
   margin: 0 auto;
   position: relative;
   top: 40px;
+  background-color: whitesmoke;
 }
 .container {
   margin: 0 auto;
@@ -89,13 +90,14 @@ li:first-letter {
   top: 0px;
 }
 
+#forecast {
+  text-align: left;
+}
 .forecastDate {
-  text-align: center;
   font-size: 15px;
   padding: 5px;
 }
 .forecastIcon {
-  text-align: center;
   padding: 5px;
   font-size: 15px;
 }
