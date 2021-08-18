@@ -44,13 +44,21 @@
               ><span class="windSpeed"> km/h</span>
             </li>
           </ul>
-          </div>
-          <div class="col-6" id="forecast">
-    <span class="forecastDate" id="forecast-date">Mon</span><span class="forecastIcon" id="forecast-icon"> &#x2600</span>
-    <span class="forecastMax" id="forecastMax">26°</span><span class="forecastMin" id="forecast-Min">14°</span>
-   </div>  
-  </div>
+        </div>
+        <div class="col-6" id="forecast">
+          <span class="forecastDate" id="forecast-date">Mon</span>
+          <img
+            src="http://openweathermap.org/img/wn/${
+            forecastDay.weather[0].icon
+          }@2x.png"
+            alt=""
+            width="15"
+          />
+          <span class="forecastMax" id="forecastMax">26°</span
+          ><span class="forecastMin" id="forecast-Min">14°</span>
+        </div>
       </div>
+    </div>
     <p class="sourceLink">
       <a href="https://github.com/MadickenM/Madickens-Weather-App.git"
         >Open source code</a
