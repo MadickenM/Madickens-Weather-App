@@ -1,20 +1,26 @@
-let now = new Date();
-let day = now.getDay();
-let hour = now.getHours();
-let minutes = now.getMinutes();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-day = days[now.getDay()];
-minutes = ("0" + now.getMinutes()).slice(-2);
-let currentTime = document.querySelector("#date");
-currentTime.innerHTML = `${day} ${hour}:${minutes}`;
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  return `${day} ${hours}:${minutes}`;
+}
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -69,6 +75,7 @@ function changeTemperature(response) {
   celsiusTemperature = Math.round(response.data.main.temp);
   document.querySelector(".description").innerHTML =
     response.data.weather[0].description;
+  let dateElement = document.querySelector("#date");
   document.querySelector(".humid").innerHTML = Math.round(
     response.data.main.humidity
   );
@@ -81,6 +88,8 @@ function changeTemperature(response) {
       "src",
       `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
+
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
