@@ -116,17 +116,4 @@ function displayFarenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
 }
 
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrTemp");
-fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
-
-let celsiusLink = document.querySelector("#celTemp");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
 searchCity("London");

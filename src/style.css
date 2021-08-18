@@ -62,20 +62,10 @@ p {
   top: -5px;
 }
 #celTemp {
-  text-decoration-color: black;
-  text-decoration: none;
-  font-size: 15px;
-  position: relative;
-  right: -15px;
-  top: -30px;
   color: black;
-}
-#fahrTemp {
-  text-decoration-color: black;
-  text-decoration: none;
   font-size: 15px;
   position: relative;
-  right: -15px;
+  right: -10px;
   top: -30px;
   color: black;
 }
@@ -90,16 +80,16 @@ li:first-letter {
   text-align: left;
   margin-bottom: 30px;
   position: relative;
-  right: -70px;
-  top: -10px;
+  right: -90px;
+  top: -20px;
 }
 
 #forecast {
   padding: 5px;
   text-align: left;
   position: relative;
-  right: -30px;
-  top: -3px;
+  right: -20px;
+  top: -5px;
 }
 .forecastDate {
   font-size: 15px;
@@ -108,6 +98,7 @@ li:first-letter {
 .forecastIcon {
   padding: 5px;
   position: relative;
+  right: -10px;
   font-size: 15px;
 }
 
