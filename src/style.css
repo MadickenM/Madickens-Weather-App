@@ -15,9 +15,10 @@ body {
   background: linear-gradient(lightblue, cornflowerblue);
 }
 p {
-  padding: 5px;
   font-size: 35px;
   color: brown;
+  position: relative;
+  top: -10px;
 }
 .searchbox {
   padding: 25px;
@@ -90,14 +91,14 @@ li:first-letter {
   margin-bottom: 30px;
   position: relative;
   right: -70px;
-  top: -20px;
+  top: -30px;
 }
 
 #forecast {
   text-align: left;
   position: relative;
   right: -30px;
-  top: 0px;
+  top: -10px;
 }
 .forecastDate {
   font-size: 15px;
