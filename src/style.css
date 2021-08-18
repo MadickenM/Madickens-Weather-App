@@ -1,5 +1,5 @@
 body {
-  max-width: 700px;
+  max-width: 710px;
   margin: 0 auto;
   position: relative;
   top: 40px;
@@ -74,13 +74,14 @@ li:first-letter {
   text-transform: capitalize;
 }
 #currentWeather {
+  padding: 3px;
   list-style-type: none;
   font-size: 12px;
   color: white;
   text-align: left;
   margin-bottom: 30px;
   position: relative;
-  right: -90px;
+  right: -110px;
   top: -20px;
 }
 
@@ -93,7 +94,7 @@ li:first-letter {
 }
 .forecastDate {
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
 }
 .forecastIcon {
   padding: 5px;
