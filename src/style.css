@@ -95,6 +95,7 @@ li:first-letter {
 }
 
 #forecast {
+  padding: 5px;
   text-align: left;
   position: relative;
   right: -30px;
